@@ -3,15 +3,19 @@
 use strict;
 use warnings;
 
-use Test::More tests => 39;
+use Test::More;
 BEGIN { use_ok('GSAPI') };
 
 use bytes;
+
+my $num_callbacks=0;
 
 my( $width, $height, $raster, $format );
 sub callback
 {
     my( $name, $handle, $device, @more ) = @_;
+
+    $num_callbacks++;
 
     my $pimage;
     if( @more and 1024 < length $more[-1] ) {
@@ -117,3 +121,5 @@ pass( 'run_file' );
 
 GSAPI::exit($gs);
 pass( 'exit' );
+
+done_testing(41 + $num_callbacks);
