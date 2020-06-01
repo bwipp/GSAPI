@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                GSAPI
-version:             0.5
+version:             0.6
 abstract:            Perl extension for accessing GNU Ghostscript
 license:             ~
 author:              

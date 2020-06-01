@@ -107,7 +107,7 @@ our @EXPORT = qw(
 	
 );
 
-our $VERSION = '0.5';
+our $VERSION = '0.6';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
@@ -428,6 +428,7 @@ L<http://pages.cs.wisc.edu/~ghost/doc/svn/Readme.htm>
 
 Stefan Traby, E<lt>stefan@hello-penguin.comE<gt>
 Philip Gwyn, E<lt>gwyn-at-cpan.orgE<gt>
+Terry Burton, E<lt>tez-at-terryburton.co.ukE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
