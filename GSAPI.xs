@@ -10,7 +10,7 @@
 
 #include "const-c.inc"
 
-typedef gs_main_instance *GSAPI__instance;
+typedef void *GSAPI__instance;
 
 #ifndef DEBUG
 #define DEBUG 0
@@ -432,7 +432,7 @@ GSAPI::instance
 new_instance()
   PROTOTYPE:
   PREINIT:
-      gs_main_instance *inst = 0;
+      GSAPI__instance inst = 0;
   CODE:
        gsapi_new_instance(&inst, 0); // we don't need to check rc.
        RETVAL = inst;
