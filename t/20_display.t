@@ -105,7 +105,7 @@ GSAPI::init_with_args( $gs, "-q",
                             "-r100",
                             "-dNOPAUSE",
                             "-dBATCH",
-                            "-dDisplayHandle=1234",
+                            "-sDisplayHandle=1234",
                             "-dDisplayFormat=$format",
 #                            "-dSAFER",
                             "-sDEVICE=display"
