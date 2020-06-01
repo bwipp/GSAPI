@@ -81,7 +81,7 @@ sub pimage_ok
 
 $format = sprintf( "%d", 
             GSAPI::DISPLAY_COLORS_RGB() | 
-            GSAPI::DISPLAY_ALPHA_LAST() | 
+            GSAPI::DISPLAY_ALPHA_NONE() |
             GSAPI::DISPLAY_DEPTH_8() |
             GSAPI::DISPLAY_BIGENDIAN() | 
             GSAPI::DISPLAY_TOPFIRST()
